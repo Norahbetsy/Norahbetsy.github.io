@@ -1,0 +1,595 @@
+Which of the following is not true about the set?
+*
+5 points
+Encloses elements using curly brackets
+Mutable
+Uses hash tables
+None of the above
+Which of the following is a correct way to declare an empty set?
+*
+5 points
+set_1={}
+set_2=set()
+Both a and b
+None of the above
+Which of the following is the extra property of frozen set?
+*
+5 points
+Can access values using index
+Immutable
+Have more number of bulti-in operations
+All the above
+Find the output of the following code?
+
+set1={4,’v’,6.9,4.0,’e’}
+set1
+
+*
+5 points
+{4,'v',6.9,4.0,'e'}
+{'v', 4, 6.9, 'e'}
+{'v', 4, 4.0, 6.9, 'e'}
+{'v', 4.0, 4, 6.9, 'e'}
+Which of the following can be the elements of a set?
+*
+5 points
+String
+Sets
+Tuples
+Both Strings and Tuples
+What will be the output of the following code?
+
+list1=[”]*3
+print(len(list1))
+
+*
+5 points
+1
+4
+3
+0
+Which of the following is the output of the following code?
+
+list1=[1,-2,3]
+
+[[i+j for i in list2] for j in list1]
+
+*
+5 points
+[2, 4, 5, 9, 10, 1, -1, 1, 2, 6, 7, -2, 4, 6, 7, 11, 12, 3]
+[2, -1, 4, 4, 1, 6, 5, 2, 7, 9, 6, 11,10, 7, 12, 1, -2, 3]
+[[2, 4, 5, 9, 10, 1], [-1, 1, 2, 6, 7, -2], [4, 6, 7, 11, 12, 3]]
+[[2, -1, 4, 4, 1, 6], [5, 2, 7, 9, 6, 11],[10, 7, 12, 1, -2, 3]]
+Which of the following is the output of the following code?
+
+list1=[1,-3,0.9,5.6]
+[int(i) for i in list1]
+
+*
+5 points
+[1, -3, 0, 5]
+[1, -3, 1, 5]
+[1, -3, 1, 6]
+[1, -3, 0, 6]
+Which of the following is the output of the following code?
+
+[i for i in “ABCDEFG” if i not in “aeiou”]
+
+*
+5 points
+['A', 'B', 'C', 'D', 'E', 'F', 'G']
+['B', 'C', 'D', 'F', 'G']
+['A', 'E']
+None of the above
+ In Python, slicing can be done by either using the _____ or ____ type of indexing.
+*
+5 points
+Positive, negative
+Right, wrong
+Ascending, Descending
+None of the above
+What is the output of the following code
+
+
+li = [6, 24, 25, 16]
+
+print(li[-1:-4:-1])
+
+*
+5 points
+[25, 24, 6]
+[16, 25, 24, 6]
+[16, 25]
+[16, 25, 24]
+What is the output of the following code
+print(“Hello World”[::-1])
+*
+5 points
+Hello World
+dlroW olleH
+dlroWolleH
+Syntax Error
+Find the output of the following code?
+
+def func(c):
+    if(c in ‘aeiou’):
+        return c
+    return “end”
+func(‘i’)
+
+*
+5 points
+'i'
+'i' ‘end’
+‘i’ ‘end’
+‘end’
+Which of the following finds the minimum of a list?
+*
+5 points
+print(filter(lambda x,y: x if x<y else y,[-3,2,9,0]))
+print(reduce(lambda x,y: x if x<y else y,[-3,2,9,0]))
+print(map(lambda x,y: x if x<y else y,[-3,2,9,0]))
+All the above
+Find the output of the following code?
+
+def fun(lst):
+    def func(n):
+        s=0
+        for i in range(0,n+1):
+            s=s+lst[i]
+        return s
+    for i in range(len(lst)):
+        print(func(i),end=’ ‘)
+fun([1,3,5])
+
+*
+5 points
+0 1 4
+0 1 4 9
+1 4 9
+None of the above
+Which of the following statements can be used to define an empty function?
+*
+5 points
+Pass statement
+Empty return statement
+print(‘’)
+Both a and b
+Find the output of the following code?
+
+def fun(x,y=0,z):
+    print(x-y+z)
+fun(1,23)
+
+*
+5 points
+24
+-22
+23
+SyntaxError
+What does the range() function return?
+*
+5 points
+list
+set
+range
+All the above
+Which of the following do not give any error?
+*
+5 points
+range(1,4,0)
+range(2.0,5,2)
+range(3.0,6.0)
+None of the above
+What is the output of the following code?
+>>> class Person:
+
+ 
+
+>>>    def __init__(self, name, age):
+
+>>>        self.name = name
+
+>>>        self.age = age
+
+ 
+
+>>>    def birthday(self):
+
+>>>        self.age += 1
+
+ 
+
+>>> p1 = Person(“Smith”, 24)
+
+>>> p2 = Person(“Chris”, 30)
+
+>>> for _ in range(10):
+
+>>>    p2.birthday()
+
+>>> num = p1.age + p2.age
+
+>>> print(num)
+
+*
+5 points
+64
+63
+54
+65
+What will be the output of this code?
+>>> class Leaf:
+
+>>>    color = “Green”
+
+>>>    def __init__(self, color):
+
+>>>        self.color = color
+
+ 
+
+>>> leaf1 = Leaf(“Blue”)
+
+>>> color1 = leaf1.color
+
+>>> leaf1.color = “Orange”
+
+>>> color2 = leaf1.color
+
+>>> color3 = Leaf.color
+
+>>> print(color1+color3+color2)
+
+*
+5 points
+BlueOrangeGreen
+BlueGreenOrange
+OrangeGreenBlue
+GreenOrangeGreen
+What will be printed out?
+>>> class Fruit:
+
+>>>    pass
+
+>>> print(Fruit.__name__)
+
+*
+5 points
+class
+__main__
+AttributeError
+Fruit
+The ability of one class to acquire methods and attributes of another class is called ____.
+*
+5 points
+Abstraction
+Inheritance
+Polymorphism
+Encapsulation
+What is the output of the below code?
+
+Code
+
+>>> class Audio:
+
+ 
+
+>>>    def use(self):
+
+>>>        print(“To listen”)
+
+ 
+
+>>> class Video:
+
+ 
+
+>>>    def use(self):
+
+>>>        print(“To see”)
+
+ 
+
+>>> class Movie(Audio, Video):
+
+ 
+
+>>>    def use(self):
+
+>>>        super().use()
+
+ 
+
+>>> m1 = Movie()
+
+>>> m1.use()
+
+*
+5 points
+To listen
+To see
+Both A and B
+AttributeError
+Which of the following gives the out put as 3 if the dictionary is
+
+dic={‘a’:{3:4,6:2},’t’:5,7:{1:3,9:1}}
+
+*
+5 points
+dic[‘a’][1]
+dic[7][1]
+dic[0][1]
+dic[7][0]
+What will be the output of the following code?
+
+dic={1.2:2,0.4:4,6.5:5}
+for i in dic:
+    print(i,end=” “)
+
+*
+5 points
+2 4 5
+1.2 0.4 6.5
+1.2:2 0.4:4 6.5:4
+None of the above
+What will be the output of the following code?
+
+dic={‘a’:4,’h’:2,’w’:0,5:4.3}
+dic.clear()
+dic
+
+*
+5 points
+{}
+{:}
+NameError
+None of these
+Which of the following best defines the recursion of a function?
+*
+5 points
+The process of calling the function within itself
+The process of calling another instance of the function within itself directly or indirectly
+The process of calling the same function with the same parameters
+Both b and c
+def fun(s):
+
+    if(len(s)==1):
+
+        return s[0].upper()
+
+    return fun(s[:-1])+s[-1].lower()
+
+
+print(fun("python"))
+*
+5 points
+'Python'
+'Nohtyp'
+'pythoN’
+'nohtyP'
+What is the output of the below code?
+
+def func(x):
+
+    if(len(x)==0):
+
+        return 
+
+    print(x[0]%2==0,end=” “)
+
+    return func(x[1:])
+
+func([1,2,3,4,5])
+
+*
+5 points
+True False True False True
+False True False True False
+SyntaxError
+RecursionError
+What is the output of the below code?
+
+def fun(a):
+
+    if(a>50):
+
+        return a-3
+
+    return fun(fun(a+5))
+
+*
+5 points
+49
+47
+53
+RecursionError
+Find the output of the below code?
+def op(a,b,c):
+
+    print(a+b-c)
+
+op(a=5,c=7,b=2)
+
+op(c=7,b=2,a=5)
+
+*
+5 points
+0 10
+10 10
+0 0
+10 0
+File: Cars.py
+
+Code
+
+>>> def car():
+
+>>>    print(‘A car’)
+
+ 
+
+File: main.py
+
+Code
+
+>>> from Cars import car
+
+>>> def car():
+
+>>>    print(“Not a car”)
+
+>>> car()
+
+*
+5 points
+Not a car
+a car
+Runtime Error
+Compile-time Error
+File: minions.py
+
+Code
+
+>>> def fav_food():
+
+>>>    print(“Bananas”)
+
+>>> if __name__ == “__main__”:
+
+>>>    fav_food()
+
+ 
+
+File: run_minions.py
+
+Code
+
+>>> import minions
+
+>>> minions.fav_food()
+
+*
+5 points
+String “Bananas” is printed twice
+String “Bananas” is printed once
+String “Bananas” is printed thrice
+SyntaxError
+OS module is a  ___  module.
+*
+5 points
+Built-in
+User-defined
+Both A and B
+None of the above
+What will be the output of this code?
+
+import os
+
+print(os.listdir())
+
+print(os.path.exists(‘modules’))
+
+*
+5 points
+['modules.py'] True
+['modules'] False
+['modules'] True
+[ ] True
+What function in the OS module is used to get the Current Working Directory?
+*
+5 points
+cwd()
+getcwd()
+mkdir()
+chdir()
+What is the output of the below code?
+
+Code
+
+>>> class Square:
+
+ 
+
+>>>    def __init__(self, side):
+
+>>>        self.side = side
+
+>>>        self.area = side*side
+
+ 
+
+>>> s1 = Square(Square(Square(2).side).area)
+
+>>> print(s1.area)
+
+*
+5 points
+syntaxError
+TypeError
+4
+16
+What is the output of the below code?
+
+Code
+
+>>> class Sum:
+
+>>>    def __init__(self, n):
+
+>>>        self.n = n
+
+>>> num = 0
+
+>>> if isinstance(int, object):
+
+>>>    num += 1
+
+>>> if isinstance(num, object):
+
+>>>    num += 4
+
+>>> if isinstance(Sum, object):
+
+>>>    num += 6
+
+>>> N = Sum(num)
+
+>>> if isinstance(N, (object, Sum)):
+
+>>>    num += 2
+
+>>> print(N.n + num)
+
+*
+5 points
+20
+24
+26
+14
+What is the output of the above code?
+
+Code
+
+>>> class Person:
+
+>>>    def __init__(self, name, age):
+
+>>>        self.name = name
+
+>>>        self.age = age
+
+>>>        age = 50
+
+ 
+
+>>> p1 = Person(“Sam”, 24)
+
+>>> print(p1.name, p1.age)
+
+*
+5 points
+Sam 24
+Sam 50
+Sam 26
+SyntaxError
